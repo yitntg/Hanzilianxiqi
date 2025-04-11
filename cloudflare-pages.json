@@ -1,12 +1,17 @@
 {
   "build": {
     "command": "npm run build",
-    "output_directory": "build",
-    "environment": {
-      "NODE_VERSION": "18"
+    "output_directory": "build"
+  },
+  "headers": {
+    "/*": {
+      "X-Frame-Options": "DENY",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "strict-origin-when-cross-origin"
     }
   },
-  "deploy": {
-    "skip": true
+  "env": {
+    "NODE_VERSION": "18",
+    "SKIP_DEPLOY_COMMAND": "true"
   }
 } 

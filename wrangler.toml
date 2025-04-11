@@ -1,12 +1,18 @@
 name = "hanzilianxiqi"
-main = "./build/index.js"
+type = "webpack"
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
 compatibility_date = "2023-10-30"
+main = "workers-site/index.js"
+
+[site]
+bucket = "./build"
+entry-point = "workers-site"
 
 [build]
 command = "npm run build"
 
-[site]
-bucket = "./build"
-
 [env.production]
-node_compat = true 
+workers_dev = false 
