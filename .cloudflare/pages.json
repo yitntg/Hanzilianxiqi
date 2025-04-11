@@ -2,5 +2,11 @@
   "buildCommand": "npm run build",
   "outputDirectory": "build",
   "nodeVersion": "18",
-  "skipDeployCommand": true
+  "deployCommand": "",
+  "routes": [
+    {
+      "pattern": "/*",
+      "script": ""
+    }
+  ]
 } 
