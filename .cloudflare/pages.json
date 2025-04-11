@@ -1,0 +1,17 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
+  "deploymentStrategy": "bundle",
+  "rootDirectory": ".",
+  "nodeVersion": "16",
+  "skipNodeModules": false,
+  "buildCache": true,
+  "routes": [
+    { "pattern": "/**", "serve": "/index.html", "status": 200 }
+  ],
+  "compatibility": {
+    "engines": {
+      "node": ">=16.0.0"
+    }
+  }
+} 
