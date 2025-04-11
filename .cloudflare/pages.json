@@ -1,5 +1,6 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "build",
-  "nodeVersion": "16"
+  "nodeVersion": "18",
+  "skipDeployCommand": true
 } 
