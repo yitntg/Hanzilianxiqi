@@ -1,0 +1,12 @@
+{
+  "build": {
+    "command": "npm run build",
+    "output_directory": "build",
+    "environment": {
+      "NODE_VERSION": "18"
+    }
+  },
+  "deploy": {
+    "skip": true
+  }
+} 
